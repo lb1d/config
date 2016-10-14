@@ -1,0 +1,21 @@
+[user]
+        name = 
+        email = 
+[alias]
+        lg = log --oneline --graph --all --decorate
+        cm = commit --verbose
+        au = add -u
+        aup = add -u -p
+        st = status
+        rv = remote -v
+        fa = fetch --all
+        co = checkout
+        ff = merge --ff-only
+        ci = check-ignore –n –v
+[core]
+        editor = vim
+        excludesFile = /home/user/.gitignore
+[push]
+        default = current
+[rerere]
+        enabled = true
