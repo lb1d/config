@@ -1,0 +1,9 @@
+{
+    // Rules for JSCS
+    // See http://jscs.info/rules
+    "requireSpaceAfterKeywords": ["if", "for", "else", "switch", "catch", "try"],
+    "maximumLineLength": 100,
+    "requireSpaceAfterLineComment": { "allExcept": ["#", "="] },
+    "requireCurlyBraces": ["if", "for", "else"],
+    "requireSpaceBeforeBlockStatements": 1
+}

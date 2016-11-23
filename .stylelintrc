@@ -1,0 +1,39 @@
+{
+  "rules": {
+    "indentation": 4,
+    "max-empty-lines": 2,
+    "max-line-length": 100,
+    "string-quotes": "single",
+    "no-browser-hacks": true,
+    "block-no-empty": true,
+
+    "color-no-invalid-hex": true,
+
+    "rule-nested-empty-line-before": [ "always", {
+      "except": ["first-nested"],
+      "ignore": ["after-comment"]
+    } ],
+    "rule-non-nested-empty-line-before": "always",
+
+    "property-no-unknown": true,
+    "property-case": "lower",
+
+    "declaration-colon-space-after": "always",
+    "declaration-block-no-duplicate-properties": true,
+    "declaration-block-trailing-semicolon": "always",
+    "declaration-block-no-ignored-properties": true,
+    "declaration-block-no-shorthand-property-overrides": true,
+    "declaration-block-semicolon-newline-after": "always-multi-line",
+
+    "no-eol-whitespace": true,
+    "no-extra-semicolons": true,
+    "no-invalid-double-slash-comments": true,
+    "no-missing-end-of-source-newline": true,
+
+    "function-whitespace-after": "always",
+    "time-no-imperceptible": true,
+    "value-keyword-case": "lower",
+    "unit-no-unknown": true,
+
+  }
+}
