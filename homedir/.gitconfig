@@ -8,7 +8,7 @@
         aup = add -u -p
         st = status
         rv = remote -v
-        fa = fetch --all
+        fa = fetch --all --tags
         co = checkout
         ff = merge --ff-only
         ci = check-ignore –n –v
