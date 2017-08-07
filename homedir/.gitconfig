@@ -12,6 +12,8 @@
         co = checkout
         ff = merge --ff-only
         ci = check-ignore –n –v
+        unsafe = push --no-verify
+        last = ! last.sh        
 [core]
         editor = vim
         excludesFile = /home/user/.gitignore
