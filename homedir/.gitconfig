@@ -1,25 +1,36 @@
 [user]
-        name = 
-        email = 
+	name = 
+	email = 
+	signingkey = 
 [alias]
-        lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-        cm = commit --verbose
-        au = add -u
-        aup = add -u -p
-        st = status
-        rv = remote -v
-        fa = fetch --all --tags
-        co = checkout
-        ff = merge --ff-only
-        ci = check-ignore –n –v
-        unsafe = push --no-verify
-        last = ! last.sh        
+	lg = log --color --graph --pretty=format:'%G? - %Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --decorate --all
+	cm = commit --verbose
+	au = add -u
+	st = status
+	rv = remote -v
+	fa = fetch --all --tags
+	co = checkout
+	ff = ! git fa && git merge --ff-only
+	ci = check-ignore -v -n
+	aup = add -u -p
+	unsafe = push --no-verify
+	last = ! last.sh
+	merged = ! clean_merged.sh
 [core]
-        editor = vim
-        excludesFile = /home/user/.gitignore
+	editor = vim
+	excludesfile = ~/.gitignore
+	quotepath = false
 [push]
-        default = current
+	default = current
 [rerere]
-        enabled = true
+	enabled = False
 [color]
-        ui = auto
+	ui = auto
+[github]
+	token = 
+[merge]
+	tool = meld
+[commit]
+	gpgsign = false
+[gc]
+	autoDetach = false
