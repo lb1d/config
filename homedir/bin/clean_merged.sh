@@ -1,2 +1,2 @@
 #!/bin/bash
-git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d
+git branch -a --merged | egrep -v "(^\*|master|HEAD)" | xargs git branch -rd
